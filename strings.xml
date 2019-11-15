@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Unified Health</string>
+    <string name="uh_cancel">Cancel</string>
+    <string name="u_next">Next</string>
+    <string name="uh_signup">Sign Up</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="uh_aadhar">Aaddhar no.</string>
+    <string name="uh_name">Name</string>
+    <string name="uh_age">Age</string>
+    <string name="uh_mobile">Mobile</string>
+    <string name="uh_town">Town</string>
+    <string name="signout">SignOut</string>
+    <string name="emergency" />
+    <string name="emergency_call">Emergency Call</string>
+    <string name="password_error">Password must contain atleats 8 characters</string>
+    <string name="error_message">Fill the credemtials</string>
+</resources>

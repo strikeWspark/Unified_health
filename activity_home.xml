@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/uh_home_toolbar"
+                app:title="@string/app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:background="@drawable/image_gradient">
+
+            <ImageView
+                android:id="@+id/uh_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="22dp"
+                android:padding="4dp"
+                android:src="@drawable/splash"/>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/uh_home_name"
+                android:text="Adwin Eldrin"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="12dp"
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_info_layout"
+            android:layout_margin="12dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/heartrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heart rate: "
+                android:layout_margin="8dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/actual_heartrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/heartrate"
+                android:text="92 BPM"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/hemoglobin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hemoglobin: "
+                android:layout_below="@+id/heartrate"
+                android:layout_margin="5dp"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/actual_hemoglobin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/hemoglobin"
+                android:layout_below="@+id/actual_heartrate"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:padding="2dp"
+                android:text="normal"/>
+
+            <TextView
+                android:id="@+id/bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hemoglobin"
+                android:text="BMI: "
+                android:layout_margin="5dp"
+                android:padding="2dp"
+                />
+
+            <TextView
+                android:id="@+id/actual_BMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:layout_below="@+id/actual_hemoglobin"
+                android:layout_toEndOf="@+id/bmi"
+                android:layout_margin="5dp"
+                android:padding="2dp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/uh_emergency"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/emergency_call"
+            app:cornerRadius="36dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="35dp"
+            android:padding="4dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
